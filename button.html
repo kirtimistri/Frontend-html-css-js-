@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psedo selectors and more designing</title>
+    <style>
+        .container{
+            border:20px ridge blue;
+            background-color: aquamarine;
+            padding: 34px;
+            width:600px auto;
+        }
+        .btn:hover{
+            color: white;
+            background:black;
+            
+        }
+        .btn{
+            background-color: blue;
+            padding: 6px;
+            font-size: 20px;
+            border-radius:20px;
+        }
+        a{
+         color: aliceblue;
+        }
+        a:hover{
+            color:red;
+            background-color: black;
+        }
+        a:active{
+            color:pink;
+        }
+        a:visited{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>my hedding</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita delectus at commodi! Error quam eos recusandae est voluptatibus saepe aspernatur quasi numquam pariatur. Exercitationem voluptas natus debitis non quam! Iure incidunt ullam saepe.
+        </p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

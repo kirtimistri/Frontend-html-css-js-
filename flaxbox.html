@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flax box properties</title>
+    <style>
+    .conatiner{
+        height: 344px;
+        width: 800px;
+        border: 2px solid black;
+        display: flex;
+        /* flex-direction:column-reverse;
+        /* flex-direction:column; */
+        flex-direction:row;
+        /* flex-direction:row-reverse; */
+        /* flex-wrap:wrap; */
+        flex-flow: row wrap-reverse;
+        /* justify-content: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center; */
+        /* align-items: end; */
+        /* align-items: flex-end; */
+        align-items: stretch;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 2px solid blue;
+        margin: 10px;
+        flex-basis: 200px;
+        padding: 5px 5px;
+    }
+    #item-1{order: 4;
+    flex-grow: 8}
+    #item-2{order: 9;
+    flex-shrink: 3;}
+    #item-3{order: 1;}
+    #item-4{align-self:center;}
+    </style>
+</head>
+<body>
+    <h1>flax box properties</h1>
+    <div class="conatiner">
+        <div class="item" id="item-1">Box1</div>
+        <div class="item" id="item-2">box2</div>
+        <div class="item" id="item-3">box3</div>
+        <div class="item" id="item-4">box4</div>
+    </div>
+</body>
+</html>

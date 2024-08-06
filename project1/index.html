@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueberry Blast</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('mig5.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 30px;
+        top: 10px;
+    }
+
+    .right {
+        position: absolute;
+        display: block;
+        right: 30px;
+        top: 10px;
+    }
+
+    .mid {
+        top: 30px;
+        width: 600px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .navbar {
+        display: inline-block;
+        position: sticky;
+        padding:10px;
+        /* background-color:rgb(5, 25, 250); */
+
+    }
+
+    .left img {
+        width: 73px;
+        padding-bottom: 30px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+        font: italic 1.6rem "Fira Sans", serif;
+    }
+
+    .search {
+        margin: 6px;
+        padding: 10px;
+        border-radius: 10px;
+        font: italic 1.5rem "Fira Sans", serif;
+    }
+
+    .navbar li a {
+        color: rgb(238, 238, 243);
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(126, 126, 212);
+        background-position: right;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    .header {
+        background-color: rgb(25, 25, 112);
+    }
+
+    .container {
+        border: 5px solid rgb(12, 12, 139);
+        margin: 20px 20px;
+        border-radius: 30px;
+        background-color: rgb(197, 197, 246);
+        /* background: transparent; */
+        padding: 20px 60px;
+        width: 30%;
+    }
+
+    .form-group input {
+        width: 400px;
+        text-align: center;
+        display: block;
+        padding: 3px 3px;
+        font-size: 10px;
+        margin: 10px auto;
+        border-radius: 10px;
+        font: italic 1.6rem "Fira Sans", serif;
+    }
+
+    .container h1 {
+        font-weight: bold;
+        text-align: center;
+        color:rgb(12, 12, 139);
+        font: italic 2.6rem "Fira Sans", serif;
+    }
+
+    .container .btn {
+        display: block;
+        font: italic 2.6rem "Fira Sans", serif;
+        background-color:rgb(12, 12, 139);
+        color: white;
+        font-size: 20px;
+        border-radius: 20px;
+        height:50px;
+        width: 203px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">Our Branches</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input class="search" type="text" placeholder="Search for Desert">
+        </div>
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYVvfkkTEo3O3_q0hdDiTrpzYrN9Yot6OZQ&s"
+                alt="">
+        </div>
+    </header>
+    </div>
+    <div class="container">
+        <h1>Place an Order to Get Your Desert</h1>
+        <form action="noaction.php">
+            <ul>
+                <div class="form-group"><input type="text" placeholder="Enter email"></div>
+                <div class="form-group"><input type="text" placeholder="Phone No"></div>
+                <div class="form-group"><input type="text" placeholder="Address"></div>
+                <div class="form-group"><input type="text" placeholder="enter"></div>
+                <button class="btn">Submit</button>
+            </ul>
+        </form>
+    </div>
+
+</body>
+
+</html>

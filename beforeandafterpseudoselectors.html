@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pesudo selector</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color:white;
+        }
+        section{
+            height: 300px;
+            /* border: 2px solid rgb(14, 239, 194); */
+            /* box-shadow: 10px 10px 10px white; */
+            margin:150px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content:left;
+            font-family:'Bree Serif',serif;
+        }
+        header::before{
+            top: 0;
+            left: 0;
+            opacity:0.5;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+            background: url('https://cdn.pixabay.com/photo/2023/01/10/10/47/space-7709489_1280.jpg')no-repeat center center/cover;
+        }
+        p{
+            font-size: 23px;
+            text-align: center;
+        }
+        /* section::before{
+            content: "this is the content";
+            display: flex;
+            flex-direction: column;
+        } */
+        .navigation{
+            font-size:20px ;
+            display: flex;
+            /* justify-content:center; */
+        }
+        li{
+            padding:25px;
+            list-style: none;
+        }
+        h1{
+            text-shadow:15px 15px black;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Servises</li>
+                <li class="item">Contact Us</li>  
+            </ul>
+        </nav>
+    </header>
+    <hr>
+        <section>
+            <h1>Welcome To Coding Wolrd</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum placeat quam maxime alias corporis voluptas illum asperiores tempora ea quis natus ducimus rerum esse modi accusantium incidunt quisquam illo eos neque, possimus impedit?</p>
+            <!-- <img src="img.jpg" alt="none"> -->
+        </section>
+        <hr>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        }
+        body{
+            font-family: cursive;
+            color:rgb(2, 54, 2);
+        }
+       .container{
+           width: 900px;
+           border: 15px groove green;
+           margin: auto;
+           background:lightcyan ;
+
+       }
+       .item{
+         border: 15px groove greenyellow;
+         margin: 5px;
+         padding: 12px 3px;
+         background:skyblue;
+       }
+       #fruits{
+          float: left;
+          width: 48%;
+          clear:right;
+       }
+       #computer{
+        float: left;
+        width:48%  
+       }
+       p{
+        text-align: center;
+       }
+       #stationary{
+        clear: both;
+        
+        width: 100%
+            
+       }
+       h1{
+        margin: 20px auto;
+        width: 400px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nesciunt unde animi neque nulla magnam ex mollitia beatae dolorem, est placeat ipsa libero in natus repellendus perspiciatis voluptates modi omnis.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nesciunt unde animi neque nulla magnam ex mollitia beatae dolorem, est placeat ipsa libero in natus repellendus perspiciatis voluptates modi omnis.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="statinorypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nesciunt unde animi neque nulla magnam ex mollitia beatae dolorem, est placeat ipsa libero in natus repellendus perspiciatis voluptates modi omnis.</p>
+        </div>
+    </div>
+</body>
+</html>

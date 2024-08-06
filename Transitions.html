@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        #box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 150px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(225, 127, 255);
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out;
+        }
+
+        #box:hover {
+            background-color: rgb(59, 15, 99);
+            height: 200px;
+            width: 300px;
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3> this box uses Tranision proprties</h3>
+    <div id="box">this is a Box</div>
+</body>
+
+</html>
