@@ -1,64 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      .container{
-        display: flex;
-        background-color: rgb(6, 74, 74);
-      }
-      .box{
-        background-color: aquamarine;
-        width: 250px;
-        height: 250px;
-        position: relative;
-        animation-name:kirti2;
-        animation-duration: 3s;
-        animation-iteration-count:10;
-        animation-fill-mode:forwards ;
-        animation-timing-function: ease;
-        /* animation-direction:reverse; */
-        /* animation-delay: 8s; */
-        box-shadow: 10px 10px 10px black;
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: rgb(6, 74, 74);
+    }
+
+    .box {
+      background-color: aquamarine;
+      width: 250px;
+      height: 250px;
+      position: relative;
+      animation-name: kirti2;
+      animation-duration: 3s;
+      animation-iteration-count: 10;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      /* animation-direction:reverse; */
+      /* animation-delay: 8s; */
+      box-shadow: 10px 10px 10px black;
+
+    }
+
+    @keyframes kirti {
+      from {
+        width: 200px;
       }
-      @keyframes kirti{
-        from{
-width: 200px;
-        }
-        to{
-width: 600px;
-            }}
-        @keyframes kirti2 {
-            0%{
-             top: 0px;
-             left: 0px;
-            }
-            25%{
-              top: 250px;
-              left:0px;
-            }
-            75%{
-                top: 250px;
-                left:250px;
-            }
-            100%{
-                top:0px;
-                left:250px;
-            }
-            
-        }
-      
-    </style>
+
+      to {
+        width: 600px;
+      }
+    }
+
+    @keyframes kirti2 {
+      0% {
+        top: 0px;
+        left: 0px;
+      }
+
+      25% {
+        top: 250px;
+        left: 0px;
+      }
+
+      75% {
+        top: 250px;
+        left: 250px;
+      }
+
+      100% {
+        top: 0px;
+        left: 250px;
+      }
+
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="box">
-            this is a box
-        </div>
+  <div class="container">
+    <div class="box">
+      this is a box
     </div>
+  </div>
+
+  <script>
+    var str1 = "hello kitty";
+    var str1 = "hello kirti";
+    //re write ki vajha se unpated value dilkayega error nai dega
+    console.log(str1);
+    let a = "u";
+    console.log(a);
+    {
+      let a = "u7"
+      console.log(a);
+    }
+    const b = "this cannot be changed"
+    console.log(b);
+    // conditional statements in js
+    let age = 2;
+    if (age > 18) {
+      console.log("you can marry");
+    }
+    else if (age == 2) {
+      console.log("you are only 2 year old");
+    }
+    else {
+      console.log("you cannot marry");
+    }
+    const cups = 43;
+    // this key variable can be a string also
+    switch (cups) {
+      case 4:
+        console.log("the value of cup is 4")
+        break;
+      case 41:
+        console.log("the value of cup is 41")
+        break;
+      case 42:
+        console.log("the value of cup is 42")
+        break;
+      case 43:
+        console.log("the value of cup is 43")
+        break;
+
+      default:
+        console.log("none of these value")
+        break;}
+        // arrays and object
+        let var1 = 34;
+        let var2 = null;
+        let var3 = "string";
+        let var4 = undefined;
+        //boject
+        let student = {
+          name: "halkat",
+          class: 10,
+          "subject 1": "maths",
+          school: "PBM"
+        }
+        console.log(student);
+        //array
+        let names=[13,2,3,55,"harry",undefined];
+        let names1=new Array(2,3,41,9,"harry",undefined);
+        names1=names1.sort();
+        console.log(names1.length);
+         names.push("time");
+        console.log(names);
+
+
+
     
+  </script>
 </body>
+
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right,lightblue, blue,darkblue,purple,
+            pink);
+        }
+        #btn{
+            background-color:red;
+            padding: 12px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            border:2px solid black;
+            border-radius:20px;
+        }
+        .clock{
+            font-size: larger;
+            background-color: aqua;
+            border: 5px ridge black;
+            padding: 15px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="container">
+        <li id="nav">Home</li>
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Servises</li>
+    </div>
+    <div class="container">
+        Another container
+    </div>
+    <div class="container1">
+        <h1>This is the Hedding</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quas ea, placeat eaque maxime aut impedit. Quam tenetur amet est, ipsum velit unde doloribus, ipsam excepturi incidunt natus blanditiis! Iure, ea recusandae delectus quibusdam sapiente laudantium voluptates minima sit quia dicta, quos et libero dignissimos, iste nihil qui hic amet! Veniam nulla dolore veritatis ad. Quisquam aperiam ducimus illo quis provident qui saepe voluptatum. Similique in, quae maxime eos odit dolorum libero iste iure nesciunt commodi, et ipsam earum sapiente natus cumque, delectus accusantium. Itaque alias neque ipsum voluptatum obcaecati dolores eveniet! Laboriosam, asperiores odit esse reiciendis sapiente enim, numquam vel laborum nisi officia voluptates neque consequuntur iusto non provident et repudiandae nemo delectus. Consectetur iusto repellendus omnis ex, cum illum ipsa quibusdam ut architecto et tempore eligendi debitis? Quis veritatis amet ipsam maiores possimus nemo exercitationem, corporis impedit laborum incidunt, mollitia dolor repellat repudiandae hic deleniti vel laboriosam voluptatum eligendi, placeat rerum. Ratione nam deleniti expedita velit odio quasi incidunt est eligendi odit qui exercitationem tenetur delectus consequatur possimus molestiae, minima unde reiciendis esse eaque quos assumenda sunt mollitia at aliquid? Quos, maxime quam. Esse fugiat sed quaerat error repellendus quo nulla accusantium. Voluptate inventore dolor dicta hic, earum ab mollitia vitae temporibus. Odit labore excepturi, fugit veritatis totam esse enim maxime alias sint obcaecati adipisci magnam ipsum iure dignissimos accusamus praesentium aliquam non facere dolorem voluptate, laudantium ad laboriosam perspiciatis. Tempore deserunt, delectus, sit nisi distinctio consequuntur quas veniam mollitia deleniti ad ipsum qui quasi nobis doloribus vitae, aspernatur possimus quisquam accusantium aliquam?</p>
+        <button id="btn" onclick="toggleHide()">Hide</button>
+        <div class="clock"> Time Now is <span id="time"></span> </div>
+
+    </div>
+    <script>
+        let main =document.getElementById('main')
+        console.log(main);
+
+        let nav=document.getElementById('nav')
+        console.log(main.innerHTML);
+
+        let containers=document.getElementsByClassName('container');
+        console.log(containers);
+        console.log(containers[0]);
+        console.log(containers[1]);
+    
+
+        let selector=document.querySelector('.container')
+        console.log("selector returns",selector)
+
+        let selector1=document.querySelectorAll('#nav')
+        console.log("selector returns",selector1)
+        let para=document.getElementById('para');
+        // para.addEventListener('mouseover',function run(){console.log("mouse is on the para")});
+        // para.addEventListener('mouseout',function run(){console.log("mouse is out of para")});
+        function toggleHide(){
+            let para=document.getElementById('para')
+            let btn=document.getElementById('btn')
+            if(para.style.display!='none'){
+                // para.style.display='none'
+                para.style.display='none'
+                 para.style.backgroundColor="blue"
+            }else{
+                para.style.display='block';
+            }
+        }
+        //to run a function after a perticular time of interval
+        function greet(name,by){
+console.log("Hello Good Mornnning "+name+ by)
+        }
+        // setTimeout(greet,5000,"kirti"," take care")
+        //to canssel a pericular set time out action
+
+        // timeout= setTimeout(greet,5000,"kirti"," take care")
+        // console.log(timeout);
+        // clearTimeout(timeout);
+
+        // intervalid=setInterval(greet,2000,"kirti"," how are you")
+        // clearInterval(intervalid);
+
+        function displaytime(){
+            time=new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML=time;
+         }
+            setInterval(displaytime,1000);
+
+        // Date and time in js
+        let now =new Date();
+        console.log(now);
+        let dt =new Date(0);
+        console.log(dt);
+        // let newDate=new Date("2029-09-30");
+        // console.log(newDate);
+
+        
+        let newDate=new Date("2029-09-30");
+        console.log(newDate);
+         
+        //let newDate=new Date(year,month,date,hours,minutes,seconds,miliseconds);
+        let newD=new Date (3020,4,6,9,3,2,34);
+        console.log(newD);
+ 
+        let yr= newDate.getFullYear();
+        console.log("this year is ",yr);
+        let date= newDate.getDate();
+        console.log("this date is ",dt);
+        let mn= newDate.getMonth();
+        console.log("this month is ",mn);
+        let hr= newDate.getHours();
+        console.log("this hours is ",hr);
+        let min= newDate.getMinutes();
+        console.log("this minutes is ",min);
+        let sec= newDate.getSeconds();
+        console.log("this seconds is ",sec);
+        let msec= newDate.getMilliseconds();
+        console.log("this milliseconds is ",msec);
+        let day= newDate.getDay();
+        console.log("this day  is ",day);
+        //to change date
+        newDate.setDate(15);
+        console.log(newDate);
+        // Date.now(); courent time stamp
+
+    </script>
+</body>
+</html>
