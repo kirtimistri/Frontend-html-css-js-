@@ -1,0 +1,74 @@
+body{
+    /* background-color:rgb(2, 19, 49); */
+    height: 100vh;
+    background: linear-gradient(skyblue,rgb(4,114,213),blue,rgb(2, 19, 49));
+    justify-content: center;
+}
+#logo{
+    border: 2px solid yellow;
+    border-radius: 50%;
+    display: block;
+    height: 71px;
+    margin: auto;
+    width: 70px;
+}
+.container{
+    border: 2px solid black;
+    /* box-shadow: 1px 1px 10px 10px rgb(2, 19, 49); */
+    box-shadow:inset 1px 1px 10px 6px blue;
+    background-color: rgb(2, 19, 49);
+    border-radius: 2em;
+    margin: auto;
+    max-width: 994px;
+    margin-top: 30px;
+    overflow-y: auto;
+    height: 65vh;
+}
+/* .container img{
+    height:65vh;
+    position: absolute;
+    z-index: -1;
+    max-width: 994px;
+} */
+.massage{
+background-color:white;
+width: 25%;
+height: 3%;
+margin: 1.3rem;
+padding: 10px;
+border: 2px solid red;
+border-radius: 30px;
+}
+.left{
+float: right;
+clear: both;
+}
+.right{
+    float: left;
+    clear: both;
+}
+#send-container{
+    text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 994px;
+    width: 100%;
+    margin-bottom: 6vh;
+}
+#massegeinp{
+height: 34px;
+width: 92%;
+padding: 5px;
+border: 2px solid black;
+border-radius: 30rem;
+margin: 30px 2px;
+}
+.btn{
+    height: 3em;
+    border-radius: 20%;
+    width: 4em;
+    cursor: pointer;
+    padding: 4px 10px;
+    background-color:rgb(2, 19, 49) ;
+    color: white;
+}

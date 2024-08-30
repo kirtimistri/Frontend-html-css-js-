@@ -13,7 +13,6 @@ body{
     flex-direction: column;
    /* height:480px; */
    width:80rem;
-
 }
 #home::before{
     height:300px;

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+    overflow: hidden;
+}
+/* .gamecontainer{
+    background-image:url(night.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+} */
+.btn{
+    cursor: pointer;
+    border: 30px solid black;
+}
+
+@font-face{
+    font-family: myfont;
+    src: url(gameplay/Gameplay.ttf);
+}
+.button{
+    border: 2px solid black;
+}
+#bg img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+.shin{
+    background-image:url(shin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    position: absolute;
+    height:200px;
+    left:30px;
+    bottom: 0;
+    filter: drop-shadow(1px 1px 20px yellow);
+}
+.mom{
+    background-image: url(mom.gif);
+    background-size: cover;
+    position: absolute;
+    left: 45vw;
+    width: 246px;
+    height:255px;
+    bottom: -7px;
+    filter: drop-shadow(1px 1px 20px red);
+}
+.animateshin{
+    animation: shin 0.9s linear;
+}
+.over{
+    display: flex;
+    align-items: center;
+}
+#scorecount{
+    position:absolute;
+    color:yellowgreen;
+    filter: drop-shadow(1px 1px 20px black);
+    /* border: 10px solid red; */
+    top: 27px;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 15px;
+    text-align: center;
+    /* background:url(score-removebg-preview.png); */
+    text-shadow: 0 0 2px black, 0 0 2px black;
+    background-repeat: no-repeat;
+    left:21px;
+    font-family: myfont;
+}
+.gameover{
+    /* border: 10px solid red ; */
+    top: 76px;
+    /* left:860px ; */
+    text-align: center;
+    color:red;
+    padding: 50px 300px;
+    margin: 109px 280px;
+    text-shadow: 0 0 10px black, 0 0 10px black;
+    text-align: center;
+    font-weight: 600;
+    font-family:myfont;
+    filter: drop-shadow(20px 20px  500px black);
+    /* background: linear-gradient(to left,lightblue, blue, black,darkblue,purple); */
+    /* background:url(https://www.shutterstock.com/shutterstock/videos/3510926495/thumb/5.jpg?ip=x480); */
+    /* background: url(game\ over.jpg); */
+    position:relative;
+    font-size: 60px;
+    border: 2px solid red;
+    visibility:hidden ;
+    backdrop-filter:blur(10px);
+}
+.gameover h1{
+    border: 2px solid yellow;
+    padding: 35px 35px;
+    margin: 50px 50px;
+}
+.exit{
+    color:red;
+    font-family: myfont;
+    border: 10px solid red;
+    border-radius: 20px;
+    /* height:30px; */
+    padding: 10px 50px;
+    top: 270px;
+    background:rgb(157, 62, 62);
+    box-shadow:  2px 2px 10px 5px black;
+    text-shadow: 0 0 30px black, 0 0 10px black;
+    /* left: 170px; */
+    width: 200px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.img img{
+position: absolute;
+}
+.img p {
+    position: relative;
+}
+button{
+    border: 10px solid black;
+}
+.Retry{
+    color:greenyellow;
+    border-radius: 20px;
+    background: rgb(123, 153, 64);
+    text-shadow: 0 0 30px black, 0 0 10px black;
+    box-shadow:  2px 2px 10px 5px black;
+    left: 248px;
+    font-family: myfont;
+    /* height:30px; */
+    width: 400px;
+    padding: 10px 50px;
+    font-size: 30px;
+    top: 268px;
+    left: -334px;
+    cursor: pointer;
+    border: 10px solid yellowgreen;
+}
+.momani{
+    animation:momani 6s linear infinite;
+}
+@keyframes shin{
+    0%{
+      bottom:0;
+    }
+    50%{
+bottom: 500px;
+    }
+    100%{
+ bottom: 0;
+ /* left: 100px; */
+    }
+}
+@keyframes momani {
+    0%{
+        left:100vw;
+      }
+      100%{
+   left: -10vw;
+      }
+}
