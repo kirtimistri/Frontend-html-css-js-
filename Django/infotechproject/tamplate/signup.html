@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+{% block title %} Sign up {% endblock title %}
+{% block body %}
+<!-- hya page la contact.ccs attach ahe -->
+<div class="container">
+  <link rel="stylesheet" href="/static/signup.css">
+  <img src="https://backgroundabstract.com/wp-content/uploads/edd/2021/09/green-blue-violet-gradient-8k-xv-e1656161426224.jpg" alt="Description" class="contactbg" alt="...">
+  <div class="container">
+    <h1 class=text > Sign up </h1>
+    <form method="POST" action="/signup">
+      {% csrf_token %}<!-- is ka use kar ke har bar ek naya token generete hoga our data isis page ka hai ye samzega! -->
+      <div class="parent">
+        <div class="border-s" id="entryimg">
+          <div class="entry">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="username" class="form-control" id="username" name="username" placeholder="Name">
+              <!--ikade id,name,type mention karna importent ahe ! -->
+            </div>
+            <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email"  >
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Phone No</label>
+          <input type="phone" class="form-control" id="pone No" name="phone" placeholder="Phone no">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Password</label>
+          <textarea  type="text" class="form-control" id="password" name="text" rows="3" placeholder="Password"></textarea>
+        </div>
+        <div>Alredy have an Account?<a href="/login">Login</a></div>
+      </div>
+      <div class="btnlocation">
+        <button class="btn" type="Cancel">Cancel</button>
+        <button class="btn" type="Submit">Submit</button>
+      </div>
+    </div>
+    <div>
+      <img src="https://cdn.dribbble.com/users/2401141/screenshots/5487982/developers-gif-showcase.gif" id="img"alt="#">
+    </div>
+      </div>
+    </form>
+      {% endblock body %}

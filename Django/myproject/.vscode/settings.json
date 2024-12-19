@@ -1,0 +1,12 @@
+{
+    "django.snippets.exclude": [
+
+        "cms",
+        "wagtail"
+    ],
+    "django.i18n": true,
+    "django.showContributeNotification": true,
+    "django.snippets.use": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "emmet.showSuggestionsAsSnippets": true
+}
